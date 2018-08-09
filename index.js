@@ -19,9 +19,9 @@ function viewCart() {
   let str = "In your cart, you have ";
   if (cart.length > 0){
     for (var i=0; i<cart.length; i++) {
-      str+=`${getCart()[i]["itemName"]} at $${getCart()[i]["itemPrice"]}, `;
+      str+=`${getCart()[i].itemName} at $${getCart()[i].itemPrice}, `;
      }
-    str+=`and ${getCart()[i]["itemName"]} at $${getCart()[i]["itemPrice"]}.`;
+    str+=`and ${getCart()[i].itemName} at $${getCart()[i].itemPrice}.`;
     } else {
      str = "Your shopping cart is empty."
   }
