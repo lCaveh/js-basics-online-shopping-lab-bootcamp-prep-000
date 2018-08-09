@@ -19,7 +19,7 @@ function viewCart() {
   let str = "In your cart, you have ";
   if (cart.length>0){
     for (var i=0;i++;i<cart.length) {
-      str+=`${cart[i-1].itemName} at $${cart[i-1].itemPrice}, `;
+      str+=`${cart[(i-1)].itemName} at $${cart[(i-1)].itemPrice}, `;
      }
     str+=`and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
     } else {
