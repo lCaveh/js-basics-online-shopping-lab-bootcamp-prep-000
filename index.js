@@ -10,7 +10,8 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+let itemPrice = Math.random()
+  
 }
 
 function viewCart() {
@@ -22,7 +23,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  
+  
 }
 
 function placeOrder(cardNumber) {
