@@ -23,7 +23,7 @@ function viewCart() {
      } 
     str+=`and ${getCart()[cart.length-1].itemName} at $${getCart()[cart.length-1].itemPrice}.`;
     } else if (cart.length = 1) {
-      str+=`${getCart()[cart.length-1].itemName} at $${getCart()[cart.length-1].itemPrice}.`;
+      str+=`${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`;
     } else {
      str = "Your shopping cart is empty."
   }
