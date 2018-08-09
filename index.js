@@ -18,8 +18,8 @@ function addToCart(item) {
 function viewCart() {
   let str = "In your cart, you have ";
   if (cart.length>0){
-    for (var i=1;i++;i<cart.length) {
-      str+=`${cart[i-1].itemName} at &#36${cart[i-1].itemPrice}, `;
+    for (var i=0;i++;i<cart.length-1) {
+      str+=`${cart[i].itemName} at &#36${cart[i].itemPrice}, `;
      }
     str+=`and ${cart[i].itemName} at &#36${cart[i].itemPrice}.`;
     } else {
