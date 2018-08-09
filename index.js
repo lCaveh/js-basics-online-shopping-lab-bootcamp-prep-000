@@ -16,11 +16,12 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  let str = "In your cart, you have "
+  let str = "In your cart, you have ";
   for (i=0;i++;i<cart.length) {
-    str+=`${cart[i].itemName} at 
-}
-  
+    str+=`${cart[i].itemName} at &#36${cart[i].itemPrice}, `;
+    }
+  str+=`and ${cart[i].itemName} at &#36${cart[i].itemPrice}.`;
+  return str;
 }
 
 function total() {
