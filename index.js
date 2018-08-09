@@ -16,9 +16,9 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  let str = "
+  let str = "In your cart, you have "
   for (i=0;i++;i<cart.length) {
-    
+    str+=`${cart[i].itemName} at 
 }
   
 }
