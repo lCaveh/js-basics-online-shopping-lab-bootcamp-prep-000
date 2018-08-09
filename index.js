@@ -22,7 +22,7 @@ function viewCart() {
       str+=`${getCart()[i].itemName} at $${getCart()[i].itemPrice}, `;
      } 
     str+=`and ${getCart()[cart.length-1].itemName} at $${getCart()[cart.length-1].itemPrice}.`;
-    } else if (cart.length = 1) {
+    } else if (cart.length === 1) {
       str+=`${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`;
     } else {
      str = "Your shopping cart is empty."
