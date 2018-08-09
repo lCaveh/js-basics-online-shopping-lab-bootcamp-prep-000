@@ -18,9 +18,9 @@ function addToCart(item) {
 function viewCart() {
   let str = "In your cart, you have ";
   if (cart.length>0){
-  for (i=0;i++;i<cart.length) {
-    str+=`${cart[i].itemName} at &#36${cart[i].itemPrice}, `;
-    }
+    for (i=0;i++;i<cart.length) {
+      str+=`${cart[i].itemName} at &#36${cart[i].itemPrice}, `;
+     }
     str+=`and ${cart[i].itemName} at &#36${cart[i].itemPrice}.`;
     } else {
      str = "Your shopping cart is empty."
